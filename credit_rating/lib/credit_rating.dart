@@ -336,14 +336,14 @@ class RatingProgressBarPainter extends CustomPainter {
                 clusterRadius * 1.23 + textPainter.height / 2 + 1),
             _levelTextPaint);
 
-        TextSpan ProgressTextSpan = TextSpan(
+        TextSpan progressTextSpan = TextSpan(
             text: '${(progress*progressController).toInt()}',
             style: TextStyle(
                 color: Colors.black,
                 fontWeight: FontWeight.bold,
                 fontSize: 58));
         TextPainter progressTextPainter = TextPainter(
-            textDirection: TextDirection.ltr, text: ProgressTextSpan);
+            textDirection: TextDirection.ltr, text: progressTextSpan);
         progressTextPainter.layout(maxWidth: clusterRadius * 2);
         progressTextPainter.paint(
             canvas,
