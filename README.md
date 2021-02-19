@@ -1,4 +1,4 @@
 # rating_credit
 
-![Image text](../demo.jpg)
+![Image text](./demo.jpg)
 
